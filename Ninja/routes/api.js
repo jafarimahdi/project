@@ -12,7 +12,8 @@ router.post('/ninjas', function (req, res) {
     res.send({ 
       type: 'POST',
       name: req.body.name,
-      rank:req.body.rank
+      rank:req.body.rank,
+      adress:req.body.adress
     });
 });
 
