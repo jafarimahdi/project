@@ -10,10 +10,16 @@ const app = express();
 mongoose.connect('mongodb://localhost/ninjago');
 mongoose.Promise = global.Promise;
 
-app.use(bodyParser.json());
+app.use(bodyParser.json());  // middelware 1
 
 //aval file balatar ra bad az slash migozarid va requier va location file dovam ra
-app.use('/api',require('./routes/api'));
+app.use('/api',require('./routes/api')); // midelware 2
+
+// middeleware 3 (error handling )
+app.use(function(err,req,res,next){
+  //console.log(error);
+  res.status(422).send({error:err.message});
+})
 
 // listen for requests 
 app.listen(process.env.port || 4000, function () {
