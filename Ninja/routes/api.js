@@ -5,8 +5,7 @@ const Ninja = require('../moudels/ninja')
 
 // get list of theninjas from the db
 router.get('/ninjas', function (req, res, next) {
-
-  res.send({ type: 'GET' });
+  res.send({ type: 'GET',  });
 });
 
 
@@ -31,8 +30,7 @@ router.put('/ninjas/:id', function (req, res, next) {
 
 
 // delet a ninja from the db
-router.delete('/ninjas/:id', function (req, res, next) {
-  const del = req.params.id;
+router.delete('/ninjas/:id', function (req, res, next) {  
   Ninja.findByIdAndRemove({_id: req.params.id}).then(function(ninja){
     res.send(ninja);
   });
