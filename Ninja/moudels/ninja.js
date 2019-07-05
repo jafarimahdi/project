@@ -2,21 +2,21 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const GeoSchema = new Schema({
-  type:{
-    type:String,
-    default:'point'
+  type: {
+    type: String,
+    default: 'Point'
   },
-  coordinates:{
-    type:[Number],
-    index:'2dsphere'
+  coordinates: {
+    type: [Number],
+    index: '2dsphere'
   }
-})
+});
 
 // creat the ninja Scheema 
 const NinjaSchema = new Schema({
   name: {
     type: String,
-    required: [true, "name field is required"]
+    required: [true, 'name field is required']
   },
   rank: {
     type: String,
@@ -24,8 +24,8 @@ const NinjaSchema = new Schema({
   avilable: {
     type: Boolean,
     default: false
-  }
-  // add in geo location
+  },
+  geometry: GeoSchema
 });
 
 const Ninja = mongoose.model('ninja', NinjaSchema);

@@ -17,7 +17,7 @@ app.use('/api',require('./routes/api')); // midelware 2
 
 // middeleware 3 (error handling )
 app.use(function(err,req,res,next){
-  //console.log(error);
+  console.log(err); // to see the erroron console
   res.status(422).send({error:err.message});
 })
 
@@ -27,6 +27,6 @@ app.use(function(err,req,res,next){
 // listen for requests 
 app.listen(process.env.port || 4000, function () {
   console.log('now listing for the request');
-})
+});
 
 
