@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
-  <link href="styles.css" rel="stylesheet" type="text/css"/>
+  <title>Ninja</title>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
 </head>
 
@@ -14,10 +14,66 @@
     <h1> Hire a ninja in your area!</h1>
     <div id='ninjas'></div>
   </div>
+
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
   <script src="https://unpkg.com/react@15/dist/react.js"></script>
   <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
 
+
+  <!--  Creat a React component-->
+  <script id="text/babel">
+
+    var Ninjas = React.createClass({
+      getInitialState: function () {
+        return ({
+          ninjas: []
+        });
+      },
+      render: function () {
+        var ninjas = this.State.ninjas;
+        ninjas = ninjas.map(function (ninja, index) {
+          return (
+            <li key={index} >
+              <span className={ninja.Obj.avilable}></span>
+              <span clasName="name">{ninja.Obj.name}</span>
+              <span className="rank">{ninja.Obj.rank}</span>
+              <span className="dist"> {Math.floor(ninja.dis / 1000)} km</span>
+            </li>
+          );
+        });
+        return (
+          <div id="ninja-container" >
+            <form id=" search" onSubmit={this.handleSubmit}>
+
+              <lablel> Enter your Latitude:</lablel>
+              <input type="text" ref="lat" laceholder="latitude" requierd />
+
+              <lablel>Enter your languited:</lablel>
+              <input type="text" ref="lng" placeholder="longitude" requierd />
+
+              <input type="submit" value="Find Ninja" />
+            </form>
+            <ul>ninja</ul>
+          </div>
+        );
+      },
+      handleSubmit: function (e) {
+        e.perventDefault();
+        var lng = this.refs.lng.value;
+        var lng = this.refs.lat.value;
+
+        fetch('/api/ninjas?lng=' + lng + '&lat ' + lat).then(function (data) {
+          return data.json();
+        }).then(json => {
+          this.setState({
+            ninja: json
+          });
+        });
+      }
+    });
+    ReactDOM.render(<Ninjas />, document.getElementById('ninjas'));
+
+  </script>
 </body>
 
 </html>
