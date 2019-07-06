@@ -10,7 +10,11 @@ const app = express();
 mongoose.connect('mongodb://localhost/ninjago');
 mongoose.Promise = global.Promise;
 
-app.use(bodyParser.json());  // middelware 1
+  // setup static files
+app.use(express.static('public'));
+
+    // use body-parser middleware
+app.use(bodyParser.json());  
 
 //aval file balatar ra bad az slash migozarid va requier va location file dovam ra
 app.use('/api',require('./routes/api')); // midelware 2
@@ -26,7 +30,7 @@ app.use(function(err,req,res,next){
 
 // listen for requests 
 app.listen(process.env.port || 4000, function () {
-  console.log('now listing for the request');
+  console.log('now listing for the requests');
 });
 
 

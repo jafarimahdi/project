@@ -1,7 +1,7 @@
 body{
   font-family: Raleway;
   color:#555;
-  background-color: #ff5252;
+  background: #ff5252;
   margin:10px 30px;
 }
 
@@ -12,16 +12,15 @@ body{
   background: #fdfdfd;
   border-radius: 4px;
   box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
-
 }
 
-input[type='text']{
+input[type="text"]{
   display:block;
   width: 300px;
   margin:20px 0;
   padding: 10px;
   border-radius: 4px;
-border:1px solid #ddd;
+ border:1px solid #ddd;
 }
 
 label{
@@ -43,7 +42,7 @@ form{
   margin: 30px auto;
 }
 
-input[type='submit']{
+input[type="submit"]{
   background:#555;
   color:#fff;
   border:0;

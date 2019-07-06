@@ -28,8 +28,8 @@ router.post('/ninjas', function (req, res, next) {
 
 // update a ninja in the db
 router.put('/ninjas/:id', function (req, res, next) {
-  Ninja.findByIdAndUpdate({ _id: req.params.id }, req.body).then(function () {
-    Ninja.findOne({ _id: req.params.id }).then(function (ninja) {
+  Ninja.findByIdAndUpdate({_id: req.params.id }, req.body).then(function () {
+    Ninja.findOne({_id: req.params.id }).then(function (ninja) {
       res.send(ninja)
     });
   }).catch(next);
@@ -39,7 +39,7 @@ router.put('/ninjas/:id', function (req, res, next) {
 
 // delet a ninja from the db
 router.delete('/ninjas/:id', function (req, res, next) {
-  Ninja.findByIdAndRemove({ _id: req.params.id }).then(function (ninja) {
+  Ninja.findByIdAndRemove({_id: req.params.id }).then(function (ninja) {
     res.send(ninja);
   }).catch(next)
 });
