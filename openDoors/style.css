@@ -57,7 +57,7 @@ text-decoration: none;
   opacity: 0.9;
   align-content: center;
   border-radius: 25px;
-  animation: slide 220s infinite;
+  animation: slide 80s infinite;
 }
 @keyframes slide{
   20%{
