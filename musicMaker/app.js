@@ -1,4 +1,5 @@
-const Tone =require('Tone.js');
+import { Tone } from "tone";
+
 // use the tone.js library  * https://cdnjs.com/libraries/tone *
 console.log('hello')
 
