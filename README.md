@@ -9,14 +9,14 @@
 - The player can choose to 'Hold', which means that his ROUND score gets added to his GLBAL score. After that, it's the next player's turn
 - players can set the winning score, so that they can change the predefined score of 100. 
 - The first player to reach 100 points on GLOBAL score wins the game
-<img src="https://raw.githubusercontent.com/jafarimahdi/project/master/pig-Game/pigGame.gif" width=600>
+<img src="https://raw.githubusercontent.com/jafarimahdi/project/master/pig-Game/pigGame.gif" width=750>
 
 ---
 ### 2- Coffee
 
 basic of Html & Css about Coffee
 
-<img  src="https://raw.githubusercontent.com/jafarimahdi/project/master/Coffee/Coffee.gif" width= 600>
+<img  src="https://raw.githubusercontent.com/jafarimahdi/project/master/Coffee/Coffee.gif" width= 750>
 
 ---
 
