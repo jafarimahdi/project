@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 12px;
+    font-family: serif Georgia, 'Times New Roman', Times;
+    color: #faf4ff;
+    background-color:#323232;
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.2rem;
+    align-content: center;
+    width: 100vw;
+}
+.nav .logo img{
+    position: absolute;
+    top: 0;
+    left: 4%;
+    width: 8%;
+}
+.nav .menu ul{
+    display: flex;
+    margin-left: -22rem;
+}
+.nav .menu ul li{
+    margin-left: 3.3rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 1rem;
+}
+.nav .sing-up {
+    font-size: 1.1rem;
+    margin-right: 1.5rem;
+    margin-top: 0.8rem;
+}
+/*  ------ main part ---- */
+.main{
+    position: absolute;
+    top: 40%;
+    left: 6%;
+    width: 30%;
+}
+.main h1{
+    word-spacing: 0.3rem;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+.main p{
+    word-spacing: 0.2rem;
+    opacity: 0.5;
+}
+.pic{
+    position: absolute;
+    top: 28%;
+    right: 9%;
+
+}
+.pic img{
+box-shadow: 12px 13px 15px rgb(31, 30, 30);
+border-bottom-right-radius: 10%;
+opacity: 1.9;
+}
+i{
+    color: white;
+    font-size: 2rem;
+    
+}
