@@ -7,8 +7,13 @@ body{
     font-size: 12px;
     font-family: serif Georgia, 'Times New Roman', Times;
     color: #faf4ff;
-    background-color:#323232;
+    background-color:#2d6974c4;
     text-transform: uppercase;
+}
+i:hover, li:hover{
+    opacity: .2;
+    color: black;
+    cursor: pointer;
 }
 a{
     text-decoration: none;
@@ -43,6 +48,7 @@ a{
     font-size: 1.1rem;
     margin-right: 1.5rem;
     margin-top: 0.8rem;
+    cursor: pointer;
 }
 /*  ------ main part ---- */
 .main{
@@ -71,8 +77,43 @@ box-shadow: 12px 13px 15px rgb(31, 30, 30);
 border-bottom-right-radius: 10%;
 opacity: 1.9;
 }
-i{
+.main i{
     color: white;
     font-size: 2rem;
-    
+    padding: 0.5rem;
+    border: 3px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.media{
+    position: absolute;
+    right: 2rem;
+    bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+
+}
+.media i{
+    font-size: 1.3rem;
+    margin: .5rem;
+    padding: .3rem;
+    transform: font-size 11.5s;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    text-align: center;
+}
+.media >i:hover{
+    position: relative;
+    opacity: .2;
+    color:black;
+    cursor: pointer;
+}
+footer ul{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin: .9rem;
 }
