@@ -7,11 +7,10 @@ body{
     font-size: 12px;
     font-family: serif Georgia, 'Times New Roman', Times;
     color: #faf4ff;
-    background-color:#2d6974c4;
+    background-color:#a07e21;
     text-transform: uppercase;
 }
 i:hover, li:hover{
-    opacity: .2;
     color: black;
     cursor: pointer;
 }
@@ -64,26 +63,24 @@ a{
 }
 .main p{
     word-spacing: 0.2rem;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 .pic{
     position: absolute;
-    top: 28%;
-    right: 9%;
-
-}
-.pic img{
-box-shadow: 12px 13px 15px rgb(31, 30, 30);
-border-bottom-right-radius: 10%;
-opacity: 1.9;
+    top: 27%;
+    right: 18%;
+    opacity: .5;
 }
 .main i{
     color: white;
     font-size: 2rem;
     padding: 0.5rem;
-    border: 3px solid white;
-    border-radius: 50%;
     cursor: pointer;
+    width: 2rem;
+    font-size: 2rem;
+}
+.main i:hover{
+    color: black;
 }
 .media{
     position: absolute;
@@ -102,18 +99,42 @@ opacity: 1.9;
     border-radius: 50%;
     text-align: center;
 }
+
 .media >i:hover{
     position: relative;
-    opacity: .2;
     color:black;
     cursor: pointer;
+    border-color: black;
+}
+footer{
+position: absolute;
+bottom: 1rem;
+left: 1rem;
 }
 footer ul{
+    display: inline-flex;
+   margin: 1rem auto;
+    text-align: center;
+   
+}
+footer ul li{
+    list-style: none;
+    margin: 0 .4rem;
+}
+footer ul li {
+   font-size: 1.3rem;   
+}
+footer ul li p{
+    font-size: .7rem;
+    padding-top: .4rem;
+}
+#more{
     position: absolute;
-    bottom: 1rem;
-    left: 1rem;
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    margin: .9rem;
+    top: 13rem;
+    left: 4rem;
+    opacity: 1;
+}
+#more:hover{
+    color: black;
+    cursor: pointer;
 }
