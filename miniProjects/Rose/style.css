@@ -17,19 +17,20 @@
 }
 html{
     font-family: var(--body-font);
-    font-size: 10px;
+    font-size:calc(10px + .5vw);
     color: var(--body-font-color);
     scroll-behavior: smooth;
 }
+
 /* Basic step  */
 
 /* other part   */
 section{
-    padding: 3.9rem;
+    padding: 3.9rem 0;
 }
 image{
-    width: 100px;
-    max-width: 100%;
+    width: auto;
+    max-width: 100vw;
 }
 a{
     text-decoration: none;
@@ -39,10 +40,14 @@ p{
 }
 .container{
     width: 100%;
-    max-width: 122.5rem;
+    max-width: 100vw;
     margin: 0 auto;
     padding: 0 2.4rem;
 }
+.container img{
+    width: 100%;
+}
+/* header */
 header{
     width: 100%;
     position: absolute;
@@ -64,7 +69,7 @@ header{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 3rem;
+    right: 2.5rem;
     cursor: pointer;
     z-index: 1500;
 }
@@ -76,15 +81,14 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    width: 80vw;
+    width: 80%;
     height: 100vh;
     background-color: var(--main-font-color-dark);
     padding: 4.4rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
- 
-    z-index: 1250;
+     z-index: 1250;
     transform: translateX(-100%);
     transition: transform .5s;
 }
@@ -116,24 +120,24 @@ header{
     transform: scale(1);
 }
 .nav-item{
-    border-bottom: 2px solid rgba(255,255,255,.8);
+    border-bottom: 2px solid rgba(255,255,255,.3);
 }
 .nav-link{
     display: block;
     color: #fff;
     text-transform: uppercase;
     font-size: 1.6rem;
-   margin-right: -2px;
     letter-spacing: 2px;
+    margin-right: -2px;
     transition: color .5s;
 }
-.nav-link{
+.nav-link:hover{
     color: var(--secondary-font-color);
 }
 /* Hero Text */
 .hero{
-    height: 100vh;
     width: 100%;
+    height: 100vh;
     background: url(/image/hero.jpg) center no-repeat;
     background-size: cover;
     display: flex;
@@ -141,12 +145,12 @@ header{
     text-align: center;
 }
 .sub-headline{
-    font-size: 8.4rem;
+    font-size: 8.5rem;
     font-family: var(--secondary-font);
     color: var(--secondary-font-color);
     font-weight: 100;
     line-height: .4;
-    letter-spacing: .2rem;
+    letter-spacing: 2px;
 
 }
 .first-letter{
@@ -159,7 +163,7 @@ header{
     font-family: var(--main-font);
     text-transform: uppercase;
     font-weight: 900;
-    letter-spacing: .5;
+    letter-spacing: .5rem;
     margin-right: -0.5rem;
 
 }
@@ -273,9 +277,36 @@ header{
 }
 .body-btn:hover,.body-btn:focus{
     background-color: var(--main-font-color-dark);
+    color: #fff;
 }
 .body-btn:hover::before, .body-btn:focus::before{
     background-color: var(--main-font-color-dark);
 }
 
 /* Tasteful Recipes */
+.tasteful-recipe{
+    background: url("image/tasteful-recipes.jpg") no-repeat center;
+    background-size: cover;
+}
+.between{
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+}
+/* Discover our menu */
+.image-group{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1.5rem;
+}
+.discover-our-menu .restaurant-description{
+    padding-top: 3rem;
+    margin-bottom: 0;
+
+}
+/* the perfect blend  */
+.perfect-blend{
+    background: url(/image/perfect-blend.jpg) center no-repeat;
+    background-size: cover;
+}
+
