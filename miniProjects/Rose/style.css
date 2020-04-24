@@ -177,6 +177,7 @@ header{
     justify-content: center;
 
 }
+
 .line{
     width: 100%;
     max-width: 8.4rem;
@@ -204,10 +205,17 @@ header{
     left: 0;
     border-left-color: #fff;
 }
+
+.single-animation {
+    opacity: 0;
+    animation: fadeDown .5s forwards 1.5s ;
+}
 .asterisk{
     font-size: 1.2rem;
     color: var(--secondary-font-color);
     margin: 0 1.6rem;
+    opacity: 0;
+    animation: astrict .3s forwards 2.4s ;
 }
 .headline-description h5{
     color: #fff;
@@ -340,6 +348,7 @@ footer{
     color: #fff;
     font-size: 2rem;
     padding: 2rem;
+    animation: Up 2s infinite ;
 }
 .footer-content{
     /* overflow: hidden; */
@@ -491,7 +500,7 @@ footer{
         margin-left: 6rem;
     }
 } 
-/* Animations */
+/* -------------  Animations   -------- */
 @keyframes fadeUp{
     0%{
         transform: translateY(4rem);
@@ -517,5 +526,35 @@ footer{
     100%{
         opacity: 1;
        width: 100%;
+    }
+}
+@keyframes astrict{
+    0%{
+        transform: rotate(0)
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(-360deg)
+    }
+}
+@keyframes fadeDown{
+    0%{
+        transform: translateY(-1rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes Up{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-1rem);
     }
 }
