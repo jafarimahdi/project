@@ -1,22 +1,24 @@
 # project
 
 
-### 1- pig-Game
-
-- The game has 2 players, playing in rounds
-- In each turn, a player rolls a dice as many times as he whishes. Each result get added to his ROUND score
-- BUT, if the player rolls a 1 or two 6, all his ROUND score gets lost. After that, it's the next player's turn
-- The player can choose to 'Hold', which means that his ROUND score gets added to his GLBAL score. After that, it's the next player's turn
-- players can set the winning score, so that they can change the predefined score of 100. 
-- The first player to reach 100 points on GLOBAL score wins the game
-<img src="https://raw.githubusercontent.com/jafarimahdi/project/master/pig-Game/pigGame.gif" width=750>
+### 1- Html & Css Projects
+    .Adidas
+    .Coffee
+    .DropDown
+    .Rose
+    .TomPoper
+    .AppTheme
+    .Bitcoin
+    .OpenDoors
+    .Portfolio
+    .RandomPic
+    .Weather
 
 ---
-### 2- Coffee
+### 2- JavaScript Projects
 
-basic of Html & Css about Coffee
+    .PigGame
 
-<img  src="https://raw.githubusercontent.com/jafarimahdi/project/master/Coffee/Coffee.gif" width= 750>
 
 ---
 
