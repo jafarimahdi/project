@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+body{
+    width: 100vw;
+}
+#head{
+    background:linear-gradient(to bottom, rgb(14, 10, 10),rgba(14, 12, 12, 0.767));
+    height: 100vh;
+}
+#nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1rem;
+    margin: 0 5rem;
+}
