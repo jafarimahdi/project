@@ -140,7 +140,7 @@ header{
 .hero{
     width: 100%;
     height: 100vh;
-    background: url(/image/hero.jpg) center no-repeat;
+    background: url(image/hero.jpg) center no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -322,7 +322,7 @@ header{
 }
 /* the perfect blend  */
 .perfect-blend{
-    background: url(/image/perfect-blend.jpg) center no-repeat;
+    background: url(image/perfect-blend.jpg) center no-repeat;
     background-size: cover;
 }
 /* Footer */
