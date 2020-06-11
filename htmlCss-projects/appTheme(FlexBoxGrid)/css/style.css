@@ -50,7 +50,7 @@ a {
 
 /* SHOW-CASE  */
 #show-case{
-    background: url(/images/showcase.jpg) no-repeat center center;
+    background: url(../images/showcase.jpg) no-repeat center center;
     border-bottom: 1px solid  #56a79a;
     margin-bottom: 30px;
     
@@ -95,7 +95,7 @@ a {
 }
 /* Info */
 #info{
-    background:#333 url(/images/info-bg.jpg) no-repeat center center;
+    background:#333 url(../images/info-bg.jpg) no-repeat center center;
     color:#fff;
 }
 #info h4{
